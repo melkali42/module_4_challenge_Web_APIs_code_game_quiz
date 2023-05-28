@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web API Code Quiz</title>
+    <link rel="stylesheet" href="./assets/style.css"  
+</head>
+
+<body>
+    <!--Start Header info-->
+    <header class="header title" id="header">
+        <div class="view high scores button">
+            <div class="style individual">
+        <button class="view high scores high score" id="view scores" type="button"> View High Scores</button>
+            </div>
+            <div class="style-indiv">
+            <p class="timer">Time: 45</p>
+            </div>
+        </div>
+    </header>
+
+    <!--Main Section-->
+
+    <main>
+        <section class="wrapper" id="begin quiz">
+
+            <div class="main title">
+                <h1 class="switch out">Web API Code Quiz</h1>
+            </div>
+
+            <div class="main display" id="question & answer">
+                <p class="p-style" id="question line">Answer the following code related questions within the 45 second time limit. 
+                    Incorrect answers will result in loss of time from timer by 5 seconds. The Final score will be equal to the time 
+                    remaining. 
+                </p>
+            </div>
+            <div class="results" id="bottom row">
+                <button id="start" class="start-btn btn-style-main" id="start button">Start Quiz</button>
+
+            </div>
+        </section>
+
+        <section id="Questions" hidden>
+            <button id="Answer 1"></button>
+            <button id="Answer 2"></button>
+            <button id="Answer 3"></button>
+            <button id="Answer 4"></button>
+        </section>
+
+        <section id="Quiz Results" hidden>
+            <p> Your Final Score is: <span id="results"></span> </p>
+
+            <div class="input group">
+                <label for="Initials">Initials</label>
+                <input id="Initials"></input>
+                <button id="Submit">Submit</button>
+            </div>
+        </section>
+
+
+    </main>
+
+    
+</body>
+</html>
