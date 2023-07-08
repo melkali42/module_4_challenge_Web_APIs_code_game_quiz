@@ -2,18 +2,15 @@
 let questionsNumber = 0;
 let seconds = 45;
 
- timer = 
+const timer = document.getElementById('timer');
+let timerInterval;
+let temporaryMessageTimeout;
 
-
-
-
-
-
-
-
+const quizHeader = document.getElementById('quiz-header');
+const questions = document.getElementById('questions');
 
 //Questions and Answers, setting up the variables
-var questions = [
+const quizQuestions = [
     {
         question: "A randon number can be created by ________________",
         answers: ["Math.random", "math./random", "Math.floor", "Math.Floor"],
@@ -35,3 +32,35 @@ var questions = [
         correctAnswer: 2
     },
 ]
+    function setQuestion(num) {
+        quizHeader.textContent = quizQuestions[num].question;
+        const answers = quizQuestions[num].answers;
+        document.getElementById('answer1').innerHTML = "1. " + answers[0]
+        document.getElementById('answer2').innerHTML = "1. " + answers[1]
+        document.getElementById('answer3').innerHTML = "1. " + answers[2]
+        document.getElementById('answer4').innerHTML = "1. " + answers[3]
+    }
+
+    document.getElementById('start button').onclick = function () {
+        questions.hidden = false;
+        document.getElementById('starting-section').hidden = true;
+        setQuestion(0);
+        timerInterval = setInterval(function () {
+            timer.innerHTML = --seconds;
+        }, 1000);
+    }
+    // add correct or wrong statement
+    function showTemporaryMessage(type){
+        if(type === "correct"){
+            document.getElementById('correct').hidden = false;
+            document.getElementById('wrong').hidden = true;
+        } else {
+            document.getElementById('correct').hidden = true;
+            document.getElementById('wrong').hidden = false;
+        }
+        document.getElementById('temp-results').hidden = false;
+        temporaryMessageTimeout = setTimeout(function (){
+            document.getElementById('temp-results').hidden = true;
+        }, 2000)
+    }
+    
