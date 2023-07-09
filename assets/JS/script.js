@@ -61,9 +61,7 @@ const questions = [
       optionsElement.appendChild(li);
     }
   }
-  
-  // Function to handle user's answer
-  // Function to handle user's answer
+    // Function to handle user's answer
 function handleAnswer() {
     const selectedOption = document.querySelector("input[name='option']:checked");
   
@@ -169,9 +167,6 @@ function addHighScore(name, score) {
   saveHighScores();
   displayHighScores();
 }
-
-// Example usage:
-// Call addHighScore() function with name and score when a player finishes the quiz and achieves a high score
 
 // Call getHighScores() and displayHighScores() functions to populate and display the high scores
 getHighScores();
