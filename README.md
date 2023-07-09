@@ -16,7 +16,10 @@ This is the URL for the deployed application: https://melkali42.github.io/module
 This is the URL for my GitHub repository for this challenge: https://github.com/melkali42/module_4_challenge_Web_APIs_code_game_quiz
 
    
-![Screenshot1](assets/images/screenshot.png)
+![Screenshot1](https://github.com/melkali42/module_4_challenge_Web_APIs_code_game_quiz/blob/main/assets/images/Web%20API%20quiz.PNG)
+![Screenshot2](https://github.com/melkali42/module_4_challenge_Web_APIs_code_game_quiz/blob/main/assets/images/Web%20API%20quiz%20(2).PNG)
+![Screenshot](https://github.com/melkali42/module_4_challenge_Web_APIs_code_game_quiz/blob/main/assets/images/Web%20API%20quiz%20(3).PNG)
+![Screenshot4](https://github.com/melkali42/module_4_challenge_Web_APIs_code_game_quiz/blob/main/assets/images/Web%20API%20quiz%20(4).PNG)
     ```
 
 ## Credits
