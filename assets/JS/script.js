@@ -44,10 +44,12 @@ const questions = [
   function showQuestion() {
     const question = questions[currentQuestion];
     questionElement.textContent = question.question;
-    
+  
     // Clear previous options
+    const optionsContainer = document.getElementById("quiz-container");
+    const optionsElement = optionsContainer.querySelector("#options");
     optionsElement.innerHTML = "";
-    
+  
     // Create radio buttons for each option
     for (let i = 0; i < question.options.length; i++) {
       const option = question.options[i];
@@ -61,6 +63,7 @@ const questions = [
       optionsElement.appendChild(li);
     }
   }
+  
     // Function to handle user's answer
 function handleAnswer() {
     const selectedOption = document.querySelector("input[name='option']:checked");
