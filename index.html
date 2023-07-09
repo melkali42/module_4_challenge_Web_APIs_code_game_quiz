@@ -15,9 +15,6 @@
             <div class="style individual">
         <button class="view high scores high score" id="view scores" type="button"> View High Scores</button>
             </div>
-            <div class="style-indiv">
-            <p class="timer">Time: 45</p>
-            </div>
         </div>
     </header>
 
@@ -40,8 +37,16 @@
                 <button id="start" class="start-btn btn-style-main" id="start button">Start Quiz</button>
 
             </div>
-        </section>
+        </section>  
 
+        <div id="quiz-container">
+            <h1 id="question"></h1>
+            <ul id="options"></ul>
+            <div id="timer">Time: <span id="time-remaining"></span></div>
+            
+            <button id="next">Next Question</button>
+          </div>
+          
         <section id="Questions" hidden>
             <button id="Answer 1"></button>
             <button id="Answer 2"></button>
